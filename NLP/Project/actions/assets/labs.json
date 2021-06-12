@@ -1,0 +1,195 @@
+{
+    "current": 0,
+    "0": {
+        "title": "Data In, Processing, Data Out",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab0/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "01/01/2021",
+        "totalProblems": 8,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 3,
+                "hidden": 5
+            }
+        }
+    },
+    "1": {
+        "title": "Data In, Processing, Data Out",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab1/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "07/01/2021",
+        "totalProblems": 9,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "2": {
+        "title": "Control Structures I",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab2/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "14/01/2021",
+        "totalProblems": 8,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "3": {
+        "title": "Control Structures II",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab3/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "21/01/2021",
+        "totalProblems": 9,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "4": {
+        "title": "Control Structures I",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab4/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "28/01/2021",
+        "totalProblems": 8,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "5": {
+        "title": "Methods, Classes, & APIs: Overloading",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab5/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "07/02/2021",
+        "totalProblems": 8,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "6": {
+        "title": "Containers: Arrays & Lists",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab6/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "07/02/2021",
+        "totalProblems": 9,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    },
+    "7": {
+        "title": "Containers: Objects & Classes",
+        "handout": "https://1581.cs.uno.edu/files/labs/lab7/handout.pdf",
+        "video": "https://1581.cs.uno.edu/",
+        "total": 40,
+        "autograde": true,
+        "due": "07/02/2021",
+        "totalProblems": 6,
+        "required": 4,
+        "submission": {
+            "steps": [
+                "Compile all your files. Command: javac *.java",
+                "Makes sure that the files run with the given command. Command: java Filename",
+                "Compress all the files you want to submit in a zip file called handin.zip",
+                "Go to autolab.cs.uno.edu and click on the course.",
+                "Click on the lab and you can drag and drop your assignment there."
+            ],
+            "points": {
+                "compilation": 2,
+                "given": 5,
+                "hidden": 3
+            }
+        }
+    }
+}

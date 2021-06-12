@@ -1,0 +1,34 @@
+{
+    "ArrayIndexOutOfBoundsException": {
+        "problem": "You are trying to reference an index that is greater than the size of the array.",
+        "solution": "Check the index of the array you are trying to refer."
+    },
+    "StringIndexOutOfBoundsException": {
+        "problem": "This is similar to ArrayIndexOutOfBounds. You are trying to reference an index of the string that is not present.",
+        "solution": "Check that the index is  less than the length of the string."
+    },
+    "NullPointerException": {
+        "problem": "This will occur when the program tries to use an object reference that does not have a value assigned to it.",
+        "solution": "Make sure your object is initialized and instansiated."
+    },
+    "NoClassDefFoundError": {
+        "problem": "It will occur when the interpreter cannot find the file containing a class with the main method.",
+        "solution": "Check that the file has a main method and is in the right folder."
+    },
+    "ArrayStoreException": {
+        "problem": "This occurs when the rules of casting elements in Java arrays are broken.",
+        "solution": "The element in the array must be of same type."
+    },
+    "ClassCastException": {
+        "problem": "This occurs when java is trying to cast an object to the wrong class.",
+        "solution": "Make sure you cast the object to the right Class."
+    },
+    "ClassNotFoundException": {
+        "problem": "This occurs when a class was present during compilation but missing during runtime.",
+        "solution": "Check all the classes are present and is in the right folder."
+    },
+    "EOFException": {
+        "problem": "This occurs when an end of file has reached unexpectedly during input.",
+        "solution": "Check if the file contains all the data you need."
+    }
+}

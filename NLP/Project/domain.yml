@@ -1,0 +1,154 @@
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: false
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- installation:
+    use_entities:
+    - os
+- help:
+    use_entities: true
+- thanks:
+    use_entities: true
+- lab_assignment_help:
+    use_entities: true
+- compilation_error:
+    use_entities: true
+- stop:
+    use_entities: true
+- determine_os:
+    use_entities:
+    - os
+- nlu_fallback:
+    use_entities: true
+- handout:
+    use_entities: true
+- runtime_error:
+    use_entities: true
+- determine_runtime_error_message:
+    use_entities:
+    - runtime_error
+- determine_compilation_error_message:
+    use_entities:
+    - compilation_error
+- submission:
+    use_entities:
+    - number
+- determine_runtime_error:
+    use_entities: true
+entities:
+- os
+- number
+- compilation_error
+- runtime_error
+slots:
+  compilation_error_message:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  current_lab:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: 0
+    auto_fill: true
+    influence_conversation: true
+  os:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  runtime_error_message:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey!
+  - text: Hello
+  utter_goodbye:
+  - text: Bye.
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_compilation:
+  - text: Have you checked all the semicolons
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+  - text: Could you rephrase the sentence, please?
+  - text: I didn't quite catch that. You might have to rephrase the sentence.
+  utter_thanks:
+  - text: You are welcome!!
+  utter_ask_continue:
+  - text: Do you want to continue?
+  utter_handoff:
+  - text: I will connect you with the help desk. Please make sure you have zoom installed.
+  - text: I will find someone to help you. Please keep your zoom open.
+  utter_ask_os:
+  - text: What Operating system do you use?
+  - text: What OS do you have?
+  - text: What is your Operating System?
+  utter_os:
+  - text: Your OS is {os}
+  utter_lab_work:
+  - buttons:
+    - payload: /handout
+      title: Handout
+    - payload: /compilation_error
+      title: Compilation error
+    - payload: /runtime_error
+      title: Runtime error
+    - payload: /submission
+      title: Submission
+    text: I can help you with that.
+  utter_ask_compilation_error_message:
+  - text: 'Can you copy and paste the first line of error message. An example of such message may look as: File.java:3: error: error message'
+  utter_ask_runtime_error_message:
+  - text: Could you copy the runtime error message?
+actions:
+- action_installation
+- action_compilation_error
+- action_lab_handout
+- action_lab_submission
+- validate_user_os_form
+- validate_current_lab
+- validate_compilation_error_form
+- validate_runtime_error_form
+- action_runtime_error
+forms:
+  user_os_form:
+    os:
+    - entity: os
+      type: from_entity
+  compilation_error_form:
+    compilation_error_message:
+    - entity: compilation_error
+      type: from_entity
+  lab_form:
+    current_lab:
+    - entity: number
+      intent: handout, submission
+      type: from_entity
+  runtime_error_form:
+    runtime_error_message:
+    - entity: runtime_error
+      type: from_entity
+e2e_actions: []
+version: '2.0'

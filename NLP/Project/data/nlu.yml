@@ -1,0 +1,229 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - good by
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+  - intent: thanks
+    examples: |
+      - thank you
+      - thanks
+      - thank you very much
+      - Thanks
+  - intent: deny
+    examples: |
+      - no
+      - n
+  - intent: stop
+    examples: |
+      - stop
+      - quit
+      - exit
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: submission
+    examples: |
+      - How do i submit my lab?
+      - how do i submit lab 5?
+      - submit lab 1
+      - submission for lab 5
+      - submit lab 2
+      - submit lab 0
+      - submit lab
+      - i need submission help
+      - i need to submit lab
+      - i need to submit lab 0
+      - i need to submit my lab
+  - intent: runtime_error
+    examples: |
+      - i have run time error
+      - i have runtime error
+      - program crashed running
+      - my program crashed with runtime error
+      - program crashed after compiling
+      - my program compiled but crashed while running
+      - file crashed while running
+      - program crashed while running
+      - my program crashed while after running for a while
+      - I have runtime error
+      - My program crashed while running
+      - program crashed after running for a while
+      - program crashed during runtime
+      - program crashed with error during runtime
+      - program crashed and error message shows
+      - program crashed after input and shows error message
+      - program crashed after i entered some data and shows InputMisMatchException
+      - program compiled but got an error while running
+      - java filename crashed while running
+      - java myprogram crashed while running
+      - My program compiled but shows error message while running
+      - program crashed while running my program
+  - intent: determine_runtime_error_message
+    examples: |
+      - [Exception in thread "main" java.lang.StringIndexOutOfBoundsException:dasda](runtime_error)
+      - [Exception in thread "file" java.lang.StringIndexOutOfBoundsException](runtime_error)
+      - [Exception in thread "main" java.lang.NoSuchMethod:](runtime_error)
+      - [Exception in thread "main" java.lang.NoClassDefFound:](runtime_error)
+      - [Exception in thread "main" java.lang.outOfMemory:](runtime_error)
+      - [Exception in thread "main" java.lang.NumberFormatException:](runtime_error)
+      - [Exception in thread "main" java.lang.IllegalFormatException:](runtime_error)
+      - [Exception in thread "main" java.lang.InputMisMatchException:](runtime_error)
+      - [Exception in thread "main" java.lang.ArrayIndexOutOfRange:](runtime_error)
+      - [Exception in thread "main" java.lang.StringIndexOutOfBoundsException](runtime_error)
+  - intent: lab_assignment_help
+    examples: |
+      - I need help with my lab assignment
+      - Help lab work
+      - lab assignment help
+      - need help in lab assignment
+      - help with current lab homework
+      - help with labwork
+      - help lab
+      - i need someone to help me with the labs
+      - someone help me with labs
+      - i can't solve lab problems
+      - i need help
+      - I need help with lab
+      - i need help with the lab
+      - i need help with lab
+      - i need hel;p
+  - intent: installation
+    examples: |
+      - I need help with my java installation in [linux](os)
+      - java installation help [chrome](os)
+      - jdk installation help in [mac](os)
+      - setup java in my computer
+      - installation for [windows](os)
+      - installation help [mac](os)
+      - java installation in [mac](os)
+      - i need installation help for [windows](os)
+      - i want to install java in my [windows](os) machine
+      - i need to install java in [mac](os)
+      - install java [windows](os)
+      - i need to install java
+      - I need to install jaba
+  - intent: determine_os
+    examples: |
+      - I use [windows](os)
+      - [linux](os)
+      - my computer has [mac](os)
+      - [Windows](os)
+      - [OS X](os)
+      - my computer uses [chromium](os)
+      - [windows](os)
+      - [windows 8](os)
+  - intent: handout
+    examples: |
+      - I need the lab handout for lab 3.
+      - I don't have the lab handout for lab 1
+      - lab handout
+      - lab 5 files
+      - show me files from the lab 1
+      - I need lab assignment
+      - I need lab homework
+      - i need lab handout
+      - i need lab handout for lab 1
+      - i need lab handout for lab 2
+      - i need lab handout for lab 3
+      - i need lab 0 handout
+      - i need lab 1 handout
+      - i need lab 2 handout
+      - i need lab 4 handout
+      - i need lab handout for lab 5
+      - I need it for lab 1
+      - I need lab handout
+      - I need lab handout for lab 4
+      - i need lab handout for lab 0
+      - i need it for lab 5
+  - intent: compilation_error
+    examples: |
+      - my program does not compile
+      - my file does not compile
+      - I am having compilation issues
+      - The program doesn't compile
+      - The terminal give me some error
+      - I can't run the program in my terminal
+      - javac command gives me an error
+      - javac command doesn't compile
+      - My assignment is not compiling
+      - compilation Error
+      - I need to compile my assignment
+      - I cannot compile my java program
+      - compilation error
+      - i need compilation help
+      - i have compilation proble
+      - I have compilation errors
+  - intent: determine_compilation_error_message
+    examples: |
+      - [Main.java:1: error: error message](compilation_error)
+      - [File.java:111: error: error message](compilation_error)
+      - [File.java:1: error: dasdasdas](compilation_error)
+      - [File.java:3: error: incompatible types: String cannot be converted to int](compilation_error)
+      - [File.java:3: error: unclosed string literal](compilation_error)
+  - intent: determine_runtime_error
+    examples: |
+      - Exception in thread "main" java.lang.StringIndexOutOfBoundsException:
+      - Exception in thread "main"java.lang.StringIndexOutOfBoundsException
+  - synonym: windows
+    examples: |
+      - windows os
+      - windows 10
+      - windows 8
+      - windows XP
+      - windows 7
+      - Windows 7
+      - win
+      - window
+  - synonym: chrome
+    examples: |
+      - chromium
+      - chrome os
+      - google os
+  - synonym: mac
+    examples: |
+      - apple
+      - mac os
+      - OS X
+      - mac OS
+      - Big Sur
+  - synonym: linux
+    examples: |
+      - arch
+      - arch linux
+      - ubuntu
+      - fedora
+  - regex: compilation_error
+    examples: |
+      - ([^\s]+)\.java:([0-9]+):\serror:\s(.+)$
+  - regex: runtime_error
+    examples: |
+      - ^(Exception in thread \")(\b.+\b)(\" java\..+\.)(.+)(?:(\: .+))?$

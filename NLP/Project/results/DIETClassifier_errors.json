@@ -1,0 +1,377 @@
+[
+  {
+    "text": "Exception in thread \"main\" java.lang.NoSuchMethod:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 50,
+        "value": "Exception in thread \"main\" java.lang.NoSuchMethod:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 50,
+        "value": "Exception in thread \"main\" java.lang.NoSuchMethod:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"main\" java.lang.InputMisMatchException:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 60,
+        "value": "Exception in thread \"main\" java.lang.InputMisMatchException:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 60,
+        "value": "Exception in thread \"main\" java.lang.InputMisMatchException:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "File.java:3File.java:3: error: unclosed string literal",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "File.java:3",
+        "entity": "compilation_error"
+      },
+      {
+        "start": 11,
+        "end": 54,
+        "value": "File.java:3: error: unclosed string literal",
+        "entity": "compilation_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 54,
+        "value": "File.java:3File.java:3: error: unclosed string literal",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"main\" java.lang.IllegalFormatException:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 60,
+        "value": "Exception in thread \"main\" java.lang.IllegalFormatException:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 60,
+        "value": "Exception in thread \"main\" java.lang.IllegalFormatException:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want to install java in my windows machine",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9212889671325684,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "os",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.9199516177177429,
+        "value": "machine",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "File.java:111: error: error message",
+    "entities": [
+      {
+        "start": 0,
+        "end": 35,
+        "value": "File.java:111: error: error message",
+        "entity": "compilation_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 35,
+        "value": "File.java:111: error: error message",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"file\" java.lang.StringIndexOutOfBoundsException",
+    "entities": [
+      {
+        "start": 0,
+        "end": 68,
+        "value": "Exception in thread \"file\" java.lang.StringIndexOutOfBoundsException",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 68,
+        "value": "Exception in thread \"file\" java.lang.StringIndexOutOfBoundsException",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.5538886189460754,
+        "value": "Exception in thread",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "runtime_error",
+        "start": 27,
+        "end": 68,
+        "confidence_entity": 0.9724625945091248,
+        "value": "java.lang.StringIndexOutOfBoundsException",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OS X",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "OS X",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "File.java:3: error: error message",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 33,
+        "value": "File.java:3: error: error message",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.980781078338623,
+        "value": "File.java:3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9285851716995239,
+        "value": "error",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 20,
+        "end": 33,
+        "confidence_entity": 0.9056782126426697,
+        "value": "error message",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"main\" java.lang.outOfMemory:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 49,
+        "value": "Exception in thread \"main\" java.lang.outOfMemory:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 49,
+        "value": "Exception in thread \"main\" java.lang.outOfMemory:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "File.java:3File.java:3: error: incompatible types: String cannot be converted to int",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "File.java:3",
+        "entity": "compilation_error"
+      },
+      {
+        "start": 11,
+        "end": 84,
+        "value": "File.java:3: error: incompatible types: String cannot be converted to int",
+        "entity": "compilation_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 84,
+        "value": "File.java:3File.java:3: error: incompatible types: String cannot be converted to int",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"main\" java.lang.NoClassDefFound:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 53,
+        "value": "Exception in thread \"main\" java.lang.NoClassDefFound:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 53,
+        "value": "Exception in thread \"main\" java.lang.NoClassDefFound:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Exception in thread \"main\" java.lang.NumberFormatException:",
+    "entities": [
+      {
+        "start": 0,
+        "end": 59,
+        "value": "Exception in thread \"main\" java.lang.NumberFormatException:",
+        "entity": "runtime_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "runtime_error",
+        "start": 0,
+        "end": 59,
+        "value": "Exception in thread \"main\" java.lang.NumberFormatException:",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "java installation help chrome",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "chrome",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "windows 8",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "windows 8",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9991994500160217,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "File.java:1: error: dasdasdas",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "File.java:1: error: dasdasdas",
+        "entity": "compilation_error"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 29,
+        "value": "File.java:1: error: dasdasdas",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.7900435328483582,
+        "value": "File.java:1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.7916041612625122,
+        "value": "error",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

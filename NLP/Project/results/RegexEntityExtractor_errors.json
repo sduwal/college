@@ -1,0 +1,410 @@
+[
+  {
+    "text": "installation help mac",
+    "entities": [
+      {
+        "start": 18,
+        "end": 21,
+        "value": "mac",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.9978912472724915,
+        "value": "mac",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "java installation in mac",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "mac",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9979276657104492,
+        "value": "mac",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need installation help for windows",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.950204074382782,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "linux",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "linux",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9925286769866943,
+        "value": "linux",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "installation for windows",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9221168160438538,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i want to install java in my windows machine",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9212889671325684,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "os",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.9199516177177429,
+        "value": "machine",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need to install java in mac",
+    "entities": [
+      {
+        "start": 26,
+        "end": 29,
+        "value": "mac",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.9937732815742493,
+        "value": "mac",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "my computer has mac",
+    "entities": [
+      {
+        "start": 16,
+        "end": 19,
+        "value": "mac",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9968796968460083,
+        "value": "mac",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need help with my java installation in linux",
+    "entities": [
+      {
+        "start": 41,
+        "end": 46,
+        "value": "linux",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.9949689507484436,
+        "value": "linux",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "install java windows",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 13,
+        "end": 20,
+        "confidence_entity": 0.8781225085258484,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OS X",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "OS X",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "windows",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.8334722518920898,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "File.java:3: error: error message",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 33,
+        "value": "File.java:3: error: error message",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.980781078338623,
+        "value": "File.java:3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9285851716995239,
+        "value": "error",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "compilation_error",
+        "start": 20,
+        "end": 33,
+        "confidence_entity": 0.9056782126426697,
+        "value": "error message",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "jdk installation help in mac",
+    "entities": [
+      {
+        "start": 25,
+        "end": 28,
+        "value": "mac",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9970135688781738,
+        "value": "mac",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Windows",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.8603368997573853,
+        "value": "Windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "my computer uses chromium",
+    "entities": [
+      {
+        "start": 17,
+        "end": 25,
+        "value": "chromium",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 17,
+        "end": 25,
+        "confidence_entity": 0.6692426800727844,
+        "value": "chrome",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "java installation help chrome",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "chrome",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I use windows",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "windows",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.998384952545166,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "windows 8",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "windows 8",
+        "entity": "os"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "os",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9991994500160217,
+        "value": "windows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,367 @@
+version: "2.0"
+stories:
+- story: utter_greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: compilation Error One
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: compilation_error_form
+  - active_loop: null
+  - action: action_compilation_error
+- story: compilation Error Two
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+- story: Story from Conversation ID d98d205ad05641f09cd83d1a5c1b871b
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: determine_compilation_error_message
+    entities:
+    - compilation_error: 'File.java:3: error: error'
+    - number: 3
+    - compilation_error: error
+    - compilation_error: error
+  - action: compilation_error_form
+  - slot_was_set:
+    - compilation_error_message: 'File.java:3: error: error'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_compilation_error
+- story: Story from Conversation ID e0078ae9091347ddaa5977cbf12214c4
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - active_loop: null
+  - action: action_compilation_error
+- story: Story from Conversation ID 6d7af770ab004b879047e22bda43cec7
+  steps:
+  - intent: lab_assignment_help
+  - action: utter_lab_work
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: determine_compilation_error_message
+    entities:
+    - compilation_error: 'File.java:3: error: error message'
+    - number: 3
+    - compilation_error: error
+    - compilation_error: error
+  - action: compilation_error_form
+  - slot_was_set:
+    - compilation_error_message: 'File.java:3: error: error message'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_compilation_error
+- story: Get lab handout
+  steps:
+  - intent: handout
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: null
+  - active_loop: null
+  - action: action_lab_handout
+- story: Story from help
+  steps:
+  - intent: lab_assignment_help
+  - action: utter_lab_work
+  - intent: handout
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 3
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_handout
+  - slot_was_set:
+    - current_lab: 0
+- story: installation guide but continue at a point
+  steps:
+  - intent: installation
+  - action: user_os_form
+  - active_loop: user_os_form
+  - slot_was_set:
+    - os: null
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: user_os_form
+  - active_loop: null
+  - action: action_installation
+- story: installation guide but stop at a point
+  steps:
+  - intent: installation
+  - action: user_os_form
+  - active_loop: user_os_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+- story: installation guide with entity
+  steps:
+  - intent: installation
+    entities:
+    - os: windows
+  - action: user_os_form
+  - active_loop: user_os_form
+  - slot_was_set:
+    - os: windows
+  - active_loop: null
+  - action: action_installation
+- story: submit lab assignment
+  steps:
+  - intent: submission
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: null
+  - active_loop: null
+  - action: action_lab_submission
+- story: Story from Conversation ID bf3661ad7b57428d878e45d8f5046097
+  steps:
+  - intent: lab_assignment_help
+  - action: utter_lab_work
+  - intent: submission
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 3
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_submission
+  - slot_was_set:
+    - current_lab: 0
+- story: lab work help
+  steps:
+  - intent: lab_assignment_help
+  - action: utter_lab_work
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - slot_was_set:
+    - compilation_error_message: Error message
+  - slot_was_set:
+    - requested_slot: null
+  - action: compilation_error_form
+  - active_loop: null
+  - action: action_compilation_error
+- story: Story from Conversation ID 29a88686fa334e74b23b144049e1fa61
+  steps:
+  - intent: lab_assignment_help
+  - action: utter_lab_work
+  - intent: handout
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 3
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_handout
+  - slot_was_set:
+    - current_lab: 0
+- story: runtime error
+  steps:
+  - intent: runtime_error
+  - action: runtime_error_form
+  - active_loop: runtime_error_form
+  - slot_was_set:
+    - requested_slot: runtime_error_message
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: runtime_error_form
+  - active_loop: null
+  - action: action_runtime_error
+- story: runtime error 1
+  steps:
+  - intent: runtime_error
+  - action: runtime_error_form
+  - active_loop: runtime_error_form
+  - slot_was_set:
+    - requested_slot: runtime_error_message
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: deny
+  - active_loop: null
+  - action: action_deactivate_loop
+- story: Story from Conversation ID 497dddf468e34c1dbc5a89b80748f859
+  steps:
+  - intent: runtime_error
+  - action: runtime_error_form
+  - active_loop: runtime_error_form
+  - slot_was_set:
+    - requested_slot: runtime_error_message
+  - intent: determine_runtime_error_message
+    entities:
+    - runtime_error: Exception in thread "main" java.lang.StringIndexOutOfBoundsException:dasda
+    - runtime_error: Exception in thread
+    - runtime_error: main
+    - runtime_error: java.lang.StringIndexOutOfBoundsException:dasda
+  - action: runtime_error_form
+  - slot_was_set:
+    - runtime_error_message: Exception in thread "main" java.lang.StringIndexOutOfBoundsException:dasda
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_runtime_error
+  - slot_was_set:
+    - runtime_error_message: null
+- story: Story from Conversation ID 5b8cdcd559674b3bbda1ee48375cf739
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: handout
+    entities:
+    - number: 4
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 0
+  - slot_was_set:
+    - current_lab: 4
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_handout
+  - slot_was_set:
+    - current_lab: 0
+- story: Story from Conversation ID 3ca379880931408798c5f6b9d2d0ae40
+  steps:
+  - intent: handout
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 0
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_handout
+  - slot_was_set:
+    - current_lab: 0
+  - intent: handout
+    entities:
+    - number: 1
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 0
+  - slot_was_set:
+    - current_lab: 1
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_handout
+  - slot_was_set:
+    - current_lab: 0
+- story: Story from Conversation ID 53526c29bf0a429090896d38be4a141b
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: determine_compilation_error_message
+    entities:
+    - compilation_error: 'File.java:3: error: error message'
+    - number: 3
+    - compilation_error: File.java:3
+    - compilation_error: error
+    - compilation_error: error message
+  - action: compilation_error_form
+  - slot_was_set:
+    - compilation_error_message: 'File.java:3: error: error message'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_compilation_error
+  - intent: thanks
+  - action: utter_thanks
+- story: Story from Conversation ID 83278f455579429ea72170d0504ce436
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: determine_compilation_error_message
+    entities:
+    - compilation_error: 'File.java:3: error: unclosed string literal'
+    - number: 3
+    - compilation_error: File.java:3
+  - action: compilation_error_form
+  - slot_was_set:
+    - compilation_error_message: 'File.java:3: error: unclosed string literal'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_compilation_error
+- story: Story from Conversation ID 9a49a657b82942c5bac48ba89825c82a
+  steps:
+  - intent: compilation_error
+  - action: compilation_error_form
+  - active_loop: compilation_error_form
+  - slot_was_set:
+    - requested_slot: compilation_error_message
+  - intent: determine_compilation_error_message
+    entities:
+    - compilation_error: 'File.java:3: error: error message'
+    - number: 3
+    - compilation_error: File.java:3
+    - compilation_error: error
+    - compilation_error: error message
+  - action: compilation_error_form
+  - slot_was_set:
+    - compilation_error_message: 'File.java:3: error: error message'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_compilation_error
+- story: Story from Conversation ID 6bd94248b8ef4ca48e4f8dec6a1a24e1
+  steps:
+  - intent: submission
+    entities:
+    - number: 1
+  - action: lab_form
+  - active_loop: lab_form
+  - slot_was_set:
+    - current_lab: 0
+  - slot_was_set:
+    - current_lab: 1
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_lab_submission

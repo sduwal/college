@@ -1,0 +1,114 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9992936849594116
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.410256028175354
+    }
+  },
+  {
+    "text": "linux",
+    "intent": "determine_os",
+    "intent_prediction": {
+      "name": "installation",
+      "confidence": 0.7172483801841736
+    }
+  },
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.490150511264801
+    }
+  },
+  {
+    "text": "my computer has mac",
+    "intent": "determine_os",
+    "intent_prediction": {
+      "name": "installation",
+      "confidence": 0.5208944082260132
+    }
+  },
+  {
+    "text": "I need lab assignment",
+    "intent": "handout",
+    "intent_prediction": {
+      "name": "lab_assignment_help",
+      "confidence": 0.9810600876808167
+    }
+  },
+  {
+    "text": "I can't run the program in my terminal",
+    "intent": "compilation_error",
+    "intent_prediction": {
+      "name": "runtime_error",
+      "confidence": 0.8517429232597351
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "handout",
+      "confidence": 0.39942920207977295
+    }
+  },
+  {
+    "text": "i can't solve lab problems",
+    "intent": "lab_assignment_help",
+    "intent_prediction": {
+      "name": "compilation_error",
+      "confidence": 0.9659461379051208
+    }
+  },
+  {
+    "text": "OS X",
+    "intent": "determine_os",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5613332986831665
+    }
+  },
+  {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4764251708984375
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9910157322883606
+    }
+  },
+  {
+    "text": "setup java in my computer",
+    "intent": "installation",
+    "intent_prediction": {
+      "name": "determine_os",
+      "confidence": 0.9078845381736755
+    }
+  },
+  {
+    "text": "I need lab homework",
+    "intent": "handout",
+    "intent_prediction": {
+      "name": "lab_assignment_help",
+      "confidence": 0.7806500196456909
+    }
+  }
+]

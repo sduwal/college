@@ -1,0 +1,44 @@
+version: "2.0"
+
+rules:
+  - rule: Greet when the user starts a conversation with intent `greet`
+    conversation_start: true
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say welcome when user thanks
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Activate form
+    steps:
+      - intent: determine_os
+      - action: user_os_form
+      - active_loop: user_os_form
+
+  - rule: Submit form os_form
+    condition:
+      - active_loop: user_os_form
+      - slot_was_set:
+          - requested_slot: os
+    steps:
+      - action: user_os_form
+      - active_loop: null
+      - action: action_installation
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase

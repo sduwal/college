@@ -1,0 +1,46 @@
+{
+    "unclosed string literal": {
+        "problem": "The 'unclosed string literal' error message is created when the string literal ends without quotation marks.",
+        "solution": "Make sure your quotation matches. For every opening quotation, you need to have a closing quotation."
+    },
+    "';' expected": {
+        "problem": "This error occurs when you forget a semicolon in the program.",
+        "solution": "Check for the semicolon in the given line number where the problem arise."
+    },
+    "')' expected": {
+        "problem": "You missed a closing bracket.",
+        "solution": "In the given line, check to see that your opening bracket has a matching closing bracket."
+    },
+    "cannot find symbol": {
+        "problem": "This is a very common issue because all identifiers in Java need to be declared before they are used. When the code is being compiled, the compiler does not understand what the identifier means.",
+        "solution": "Make sure the variables you used are declared and scope of the variable is right."
+    },
+    "incompatible types": {
+        "problem": "This is an error in logic that occurs when an assignment statement tries to pair a variable with an expression of types.",
+        "solution": "Chekc that you are assigning the right type to the variables. For example: a string must be stored in string variable."
+    },
+    "missing return statement": {
+        "problem": "This message occurs when a method does not have a return statement. Each non-void return method must return values.",
+        "solution": "You should have a return statement at the end of the method."
+    },
+    "possibly loss of precision": {
+        "problem": "This occurs when more information is assigned to a variable than it can hold.",
+        "solution": "Check that the value is assigned to the right type."
+    },
+    "reached end of file while parsing": {
+        "problem": "This error occurs in Java when the program is missing the closing curly braces.",
+        "solution": "Make sure that the curly brackets match."
+    },
+    "unreachable statement": {
+        "problem": "This occurs when a statement is written in a place that prevents it from being executed. Usually, this is after a break or return statement.",
+        "solution": "Often moving the return statement will fix this error."
+    },
+    "inconvertible types": {
+        "problem": "This occurs when Java tries to perform illegal conversion. For example: booleans can not be converted into an integer.",
+        "solution": "Chech that you are doing valid conversion."
+    },
+    "cannot return a value from method whose result type is void": {
+        "problem": "You are trying to return value with a void method.",
+        "solution": "Make sure you don't return a value from void return method."
+    }
+}

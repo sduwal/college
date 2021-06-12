@@ -1,0 +1,110 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey there
+    - good morning
+    - hey dude
+- intent: goodbye
+  examples: |
+    - see you later
+    - good afternoon
+- intent: affirm
+  examples: |
+    - y
+- intent: thanks
+  examples: |
+    - thank you very much
+- intent: deny
+  examples: |
+    - n
+- intent: stop
+  examples: |
+    - quit
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+- intent: submission
+  examples: |
+    - submit lab
+    - how do i submit lab 5?
+    - How do i submit my lab?
+- intent: runtime_error
+  examples: |
+    - I have runtime error
+    - java myprogram crashed while running
+    - program crashed after i entered some data and shows InputMisMatchException
+    - program crashed and error message shows
+    - program crashed while running
+- intent: determine_runtime_error_message
+  examples: |
+    - [Exception in thread "main" java.lang.StringIndexOutOfBoundsException](runtime_error)
+    - [Exception in thread "file" java.lang.StringIndexOutOfBoundsException](runtime_error)
+- intent: lab_assignment_help
+  examples: |
+    - help with labwork
+    - Help lab work
+    - I need help with my lab assignment
+- intent: installation
+  examples: |
+    - i want to install java in my [windows](os) machine
+    - java installation help [chrome](os)
+    - i need to install java in [mac](os)
+- intent: determine_os
+  examples: |
+    - [windows](os)
+    - my computer has [mac](os)
+- intent: handout
+  examples: |
+    - lab handout
+    - I need the lab handout for lab 3.
+    - show me files from the lab 1
+    - i need lab handout
+    - i need lab handout for lab 3
+- intent: compilation_error
+  examples: |
+    - javac command gives me an error
+    - compilation Error
+    - The program doesn't compile
+    - my program does not compile
+- intent: determine_compilation_error_message
+  examples: |
+    - [File.java:3](compilation_error)[File.java:3: error: unclosed string literal](compilation_error)
+    - File.java:3: error: error message
+- intent: determine_runtime_error
+  examples: |
+    - Exception in thread "main"java.lang.StringIndexOutOfBoundsException
+- synonym: windows
+  examples: |
+    - windows os
+    - windows 10
+    - windows 8
+    - windows XP
+    - windows 7
+    - Windows 7
+    - win
+    - window
+- synonym: chrome
+  examples: |
+    - chromium
+    - chrome os
+    - google os
+- synonym: mac
+  examples: |
+    - apple
+    - mac os
+    - OS X
+    - mac OS
+    - Big Sur
+- synonym: linux
+  examples: |
+    - arch
+    - arch linux
+    - ubuntu
+    - fedora
+- regex: compilation_error
+  examples: |
+    - ([^\s]+)\.java:([0-9]+):\serror:\s(.+)$
+- regex: runtime_error
+  examples: |
+    - ^(Exception in thread \")(\b.+\b)(\" java\..+\.)(.+)(?:(\: .+))?$
